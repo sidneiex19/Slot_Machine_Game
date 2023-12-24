@@ -34,7 +34,7 @@ def play_slot_machine(rows, cols, symbols):
     
     return columns 
 
-def print_professional_slot_machine(columns):
+def print_slot_machine(columns):
     rows = len(columns[0])
     border = '+---' * len(columns) + '+'
 
@@ -105,7 +105,7 @@ def main():
 
         # Simulate slot machine play
         columns = play_slot_machine(VERTICAL_REEL, HORIZONTAL_REEL, symbol_count)
-        print_professional_slot_machine(columns)
+        print_slot_machine(columns)
 
         # Example win/lose logic
         if random.choice(['win', 'lose']) == 'win':
